@@ -56,20 +56,24 @@ body{
     background-attachment: fixed;
 }
 
+
+
 .left_part{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    position: fixed; top: 100px; margin-top: var(--nav-height);
+    position: relative; margin-top: 150px; padding: var(--nav-height);
 }
 
 
 .tittle_one{
     font-size: 3.25rem;
     display: flex;
+    position: absolute;
     
 }
 
+/* css do botão do whatsapp*/
 
 .grid{
     display: grid;
@@ -78,32 +82,284 @@ body{
 
 
 .geometric{
+    position: relative; 
+    z-index: -1;
     margin-top: 100px;
     background-color: #FED774;
     width: 250px;
     height: 100px;
     border-radius: 60px   60px;
     border: #FED774;
-    font-size: 1.5rem;
-    
-
 
 }
 
+.zap{
+    visibility: visible;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 5px;
+    margin-left: 100px;
+    margin-top: -65px;
+    color: black;
+}
 
 .img{
-    padding-left: 15px;
+    visibility: visible;
+    margin-left: 15px;
+    margin-top: -75px;
+    color: black;    
 }
 
-.word{
-    font-size: 1.5rem;
-    padding-top: 10px;
-    font-weight: 600
+
+.container{
+    position: relative;
+    margin-top: 100px;
+    width: 250px;
+    height: 100px;
+    border-radius: 60px   60px;
+    background-color: #FED774;
+    
 }
+
+.legenda{
+    visibility: hidden;
+    position: absolute;
+    font-size: 1.5rem;
+    left: 50px;
+    bottom:38px
+    
+}.legenda p{
+    color: #FED774;
+
+}
+
+.container:hover .legenda{
+    visibility: visible;
+    
+
+}
+
+.container:hover {
+    background-color: #4A1F08;
+}
+
+.container:hover .zap{
+    visibility: hidden;
+}
+
+.container:hover .img{
+    visibility: hidden;
+}
+
+/* Css do botão cadastre-se*/
+
+button{
+    border: none;
+    
+}
+
+
+.geometric_b{
+
+    position: relative; 
+    z-index: -1;
+    margin-top: 0px;
+    background-color: #FED774;
+    width: 250px;
+    height: 100px;
+    border-radius: 60px  60px;
+    border: #FED774
+
+}
+
+.zap_b{
+    visibility: visible;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 5px;
+    margin-left: 65px;
+    margin-top: -70px;
+    color: black;
+}
+
+.img_b{
+    visibility: visible;
+    margin-left: 10px;
+    margin-top: -80px;
+    color: black;    
+}
+
+
+.container_b{
+    position: relative;
+    margin-top: 100px;
+    width: 260px;
+    height: 120px;
+    border-radius: 60px   60px;
+    background-color: #FED774;
+    
+}
+
+.legenda_b{
+    visibility: hidden;
+    position: absolute;
+    font-size: 1.5rem;
+    left: 30px;
+    bottom:50px
+    
+}.legenda_b p{
+    color: #FED774;
+
+}
+
+.container_b:hover .legenda_b{
+    visibility: visible;
+    
+
+}
+
+.container_b:hover {
+    background-color: #4A1F08;
+}
+
+.container_b:hover .zap_b{
+    visibility: hidden;
+}
+
+.container_b:hover .img_b{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Css do botão cardápio*/
+
+.geometric_s{
+    position: relative; 
+    z-index: -1;
+    margin-top: 0px;
+    background-color: #FED774;
+    width: 250px;
+    height: 100px;
+    border-radius: 60px   60px;
+    border: #FED774;
+
+}
+
+.zap_s{
+    visibility: visible;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 5px;
+    margin-left: 100px;
+    margin-top: -65px;
+    color: black;
+}
+
+.img_s{
+    visibility: visible;
+    margin-left: 15px;
+    margin-top: -75px;
+    color: black;    
+}
+
+
+.container_s{
+    position: relative;
+    margin-top: 100px;
+    width: 250px;
+    height: 100px;
+    border-radius: 60px   60px;
+    background-color: #FED774;
+    
+}
+
+.legenda_s{
+    visibility: hidden;
+    position: absolute;
+    font-size: 1.5rem;
+    left: 7px;
+    bottom:38px
+    
+}.legenda_s p{
+    color: #FED774;
+
+}
+
+.container_s:hover .legenda_s{
+    visibility: visible;
+    
+
+}
+
+.container_s:hover {
+    background-color: #4A1F08;
+}
+
+.container_s:hover .zap_s{
+    visibility: hidden;
+}
+
+.container_s:hover .img_s{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* etiqueta  */
+.etiqueta{
+    position: absolute;
+    margin-top: 225px;
+    margin-left: -60px; 
+    background-color: #FFC700;
+    width: 130px;
+    height: 30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border: #FED774;
+    font-size: 1.20rem;
+
+}
+
+.etiqueta:hover {
+    transform: scale(2); transition: 0.7s ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+/* Aqui começa a parte direita do site, o carrosel */
 
 .right_section{
     margin-left: 750px;
-    position: fixed; top: 200px; margin-top: var(--nav-height);
+    position: relative; top: -400px; 
 }
 
 .tittle_carousel{
@@ -111,9 +367,21 @@ body{
     
 }
 
+
+.right_section{
+    margin-left: 750px;
+    position: relative; top: -400px; 
+}
+
+.tittle_carousel{
+    font-size: 3.25rem;
+    
+}
+
+
 .slider{
     margin-top: 60px;
-    width: 800px;
+    width: 550px;
     height: 400px;
     overflow: hidden;
     
@@ -190,21 +458,10 @@ body{
 }
 
 .navvigation-auto div{
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 1s;
-    border: 2px solid var(--color-yellow-500)
+    border: 2px solid blue; 
     
 }
 
-.navvigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-}
 
 .navvigation-auto div:not(:last-child){
     margin-right: 40px;
@@ -223,12 +480,102 @@ body{
 }
 
 
+/*  Aqui começa o parte infeior do site */
+
+
+.second_tittle{
+    font-weight: bold;
+    position: absolute;
+    margin-top: -590px;
+    margin-left: 220px; 
+    color: #FFFFFF;
+    font-size: 3.25rem;
+    
+
+}
+
+
+.geometric_two{
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 100px; 
+    background-color: #FED774;
+    width: 470px;
+    height: 100px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border: #FED774;
+    font-size: 1.5rem;
+}
+
+.word_bottom{
+    color: #4A1F08;
+    font-size: 3.25rem;
+    padding-top: 15px;
+    font-weight: 200
+    
+}
+
+
+.text_bottom{
+    position: absolute;
+    padding-top: -350px;
+    color: #FFFFFF;
+}
 
 
 
 
+.linha-vertical {
+    position: absolute;
+    height: 500px;
+    margin-top: -590px;
+    margin-left: 620px;
+    border-left: 2px solid #FFFFFF
+    
+  }
 
+.tittle_map{
+    font-weight: bold;
+    position: absolute;
+    margin-top: -590px;
+    margin-left: 750px; 
+    color: #FFFFFF;
+    font-size: 3.25rem;
+}
 
+.map{
+    font-weight: bold;
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 650px; 
+    color: #FFFFFF;
+    font-size: 3.25rem;
+    height: 410px;
+    width: 520px;
+    border-radius: 20px;
+    
+}
+
+.leia_mais{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 280px; 
+    background-color: #FED774;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+.word_mini_bottom{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #4A1F08;
+}
 
 
 
